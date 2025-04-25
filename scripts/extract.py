@@ -7,7 +7,7 @@ import logging
 # Configura el logger de Airflow
 logger = logging.getLogger(__name__)
 
-def extract_csv(file_name: str = 'Superstore014.csv', data_dir: str = 'data') -> pd.DataFrame:
+def extract_csv(file_name: str = 'Superstore01.csv', data_dir: str = 'data') -> pd.DataFrame:
     file_path = os.path.join(data_dir, file_name)
 
     try:

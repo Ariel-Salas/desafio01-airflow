@@ -1998,3 +1998,172 @@ ModuleNotFoundError: No module named 'extract'
 [2025-04-25T09:03:15.790+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:03:15.789+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-25T09:03:15.812+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:03:15.811+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
 [2025-04-25T09:03:15.868+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.158 seconds
+[2025-04-25T09:03:45.988+0000] {processor.py:186} INFO - Started process (PID=3002) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:03:45.993+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:03:45.999+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:03:45.998+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:03:46.045+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:03:46.085+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:03:46.085+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:03:46.118+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:03:46.117+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:03:46.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.226 seconds
+[2025-04-25T09:04:16.432+0000] {processor.py:186} INFO - Started process (PID=3066) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:04:16.433+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:04:16.436+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:04:16.436+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:04:16.472+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:04:16.499+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:04:16.499+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:04:16.520+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:04:16.519+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:04:16.548+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.125 seconds
+[2025-04-25T09:04:47.242+0000] {processor.py:186} INFO - Started process (PID=3129) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:04:47.250+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:04:47.255+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:04:47.255+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:04:47.298+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:04:47.334+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:04:47.334+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:04:47.372+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:04:47.372+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:04:47.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.205 seconds
+[2025-04-25T09:05:17.572+0000] {processor.py:186} INFO - Started process (PID=3190) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:05:17.574+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:05:17.577+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:05:17.576+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:05:17.613+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:05:17.644+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:05:17.644+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:05:17.666+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:05:17.666+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:05:17.696+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.133 seconds
+[2025-04-25T09:05:47.858+0000] {processor.py:186} INFO - Started process (PID=3251) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:05:47.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:05:47.866+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:05:47.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:05:47.972+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:05:48.051+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:05:48.050+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:05:48.109+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:05:48.108+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:05:48.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.328 seconds
+[2025-04-25T09:06:19.056+0000] {processor.py:186} INFO - Started process (PID=3314) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:06:19.059+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:06:19.070+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:06:19.070+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:06:19.159+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:06:19.202+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:06:19.202+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:06:19.234+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:06:19.233+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:06:19.269+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.222 seconds
+[2025-04-25T09:08:53.999+0000] {processor.py:186} INFO - Started process (PID=65) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:08:54.006+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:08:54.010+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:08:54.009+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:08:54.093+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:08:54.170+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:08:54.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:08:54.212+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:08:54.212+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:08:54.252+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.264 seconds
+[2025-04-25T09:09:25.138+0000] {processor.py:186} INFO - Started process (PID=129) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:09:25.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:09:25.143+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:09:25.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:09:25.168+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:09:25.193+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:09:25.193+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:09:25.218+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:09:25.218+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:09:25.248+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.121 seconds
+[2025-04-25T09:09:55.476+0000] {processor.py:186} INFO - Started process (PID=193) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:09:55.477+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:09:55.481+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:09:55.480+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:09:55.507+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:09:55.535+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:09:55.534+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:09:55.562+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:09:55.562+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:09:55.594+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.126 seconds
+[2025-04-25T09:10:26.472+0000] {processor.py:186} INFO - Started process (PID=257) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:10:26.474+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:10:26.479+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:10:26.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:10:26.520+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:10:26.553+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:10:26.553+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:10:26.594+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:10:26.594+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:10:26.642+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.182 seconds
+[2025-04-25T09:10:56.755+0000] {processor.py:186} INFO - Started process (PID=322) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:10:56.757+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:10:56.761+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:10:56.761+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:10:56.788+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:10:56.814+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:10:56.814+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:10:56.838+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:10:56.837+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:10:56.886+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.138 seconds
+[2025-04-25T09:11:27.168+0000] {processor.py:186} INFO - Started process (PID=386) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:11:27.169+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:11:27.173+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:11:27.172+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:11:27.200+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:11:27.224+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:11:27.224+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:11:27.243+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:11:27.243+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:11:27.269+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.109 seconds
+[2025-04-25T09:11:57.788+0000] {processor.py:186} INFO - Started process (PID=450) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:11:57.790+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:11:57.793+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:11:57.793+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:11:57.819+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:11:57.845+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:11:57.844+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:11:57.870+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:11:57.869+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:11:57.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.117 seconds
+[2025-04-25T09:12:28.299+0000] {processor.py:186} INFO - Started process (PID=514) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:12:28.300+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:12:28.305+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:12:28.305+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:12:28.364+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:12:28.404+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:12:28.403+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:12:28.445+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:12:28.444+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:12:28.503+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.216 seconds
+[2025-04-25T09:12:59.016+0000] {processor.py:186} INFO - Started process (PID=578) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:12:59.017+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:12:59.021+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:12:59.020+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:12:59.091+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:12:59.126+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:12:59.126+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:12:59.154+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:12:59.153+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:12:59.219+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.213 seconds
+[2025-04-25T09:13:29.476+0000] {processor.py:186} INFO - Started process (PID=642) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:13:29.477+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:13:29.482+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:13:29.481+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:13:29.538+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:13:29.579+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:13:29.579+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:13:29.608+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:13:29.608+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:13:29.648+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.182 seconds
+[2025-04-25T09:14:00.087+0000] {processor.py:186} INFO - Started process (PID=706) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:14:00.089+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T09:14:00.095+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:14:00.094+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:14:00.130+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T09:14:00.160+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:14:00.160+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T09:14:00.182+0000] {logging_mixin.py:190} INFO - [2025-04-25T09:14:00.182+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T09:14:00.224+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.151 seconds
+[2025-04-25T21:54:10.312+0000] {processor.py:186} INFO - Started process (PID=70) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:54:10.327+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T21:54:10.338+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:54:10.337+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:54:10.573+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:54:10.748+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:54:10.747+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T21:54:10.809+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:54:10.808+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T21:54:10.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.595 seconds
+[2025-04-25T21:54:41.910+0000] {processor.py:186} INFO - Started process (PID=134) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:54:41.911+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T21:54:41.917+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:54:41.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:54:41.957+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:54:41.990+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:54:41.990+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T21:54:42.019+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:54:42.019+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T21:54:42.052+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.154 seconds
+[2025-04-25T21:55:13.294+0000] {processor.py:186} INFO - Started process (PID=198) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:55:13.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T21:55:13.320+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:55:13.319+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:55:13.375+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:55:13.432+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:55:13.431+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T21:55:13.480+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:55:13.479+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T21:55:13.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.284 seconds
+[2025-04-25T21:55:43.959+0000] {processor.py:186} INFO - Started process (PID=261) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:55:43.961+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T21:55:43.965+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:55:43.964+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:55:43.999+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:55:44.183+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:55:44.183+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T21:55:44.211+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:55:44.210+0000] {dag.py:3262} INFO - Creating ORM DAG for etl_csv_pipeline
+[2025-04-25T21:55:44.212+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:55:44.212+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T21:55:44.250+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.298 seconds
+[2025-04-25T21:56:14.475+0000] {processor.py:186} INFO - Started process (PID=326) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:56:14.477+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T21:56:14.481+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:56:14.480+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:56:14.526+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:56:14.570+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:56:14.569+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T21:56:14.623+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:56:14.622+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T21:56:14.693+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.230 seconds
+[2025-04-25T21:56:45.433+0000] {processor.py:186} INFO - Started process (PID=389) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:56:45.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T21:56:45.456+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:56:45.455+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:56:45.555+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:56:45.652+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:56:45.651+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T21:56:45.705+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:56:45.704+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T21:56:45.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.376 seconds
+[2025-04-25T21:57:15.978+0000] {processor.py:186} INFO - Started process (PID=452) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:57:15.979+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-04-25T21:57:15.983+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:57:15.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:57:16.027+0000] {processor.py:925} INFO - DAG(s) 'etl_csv_pipeline' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-04-25T21:57:16.054+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:57:16.054+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-25T21:57:16.077+0000] {logging_mixin.py:190} INFO - [2025-04-25T21:57:16.076+0000] {dag.py:4180} INFO - Setting next_dagrun for etl_csv_pipeline to None, run_after=None
+[2025-04-25T21:57:16.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.152 seconds
