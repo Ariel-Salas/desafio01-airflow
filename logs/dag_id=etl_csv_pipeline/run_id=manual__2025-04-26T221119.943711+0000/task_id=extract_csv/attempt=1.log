@@ -1,0 +1,42 @@
+[2025-04-26T22:11:26.524+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-26T22:11:26.554+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_csv_pipeline.extract_csv manual__2025-04-26T22:11:19.943711+00:00 [queued]>
+[2025-04-26T22:11:26.569+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_csv_pipeline.extract_csv manual__2025-04-26T22:11:19.943711+00:00 [queued]>
+[2025-04-26T22:11:26.570+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-26T22:11:26.591+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract_csv> on 2025-04-26 22:11:19.943711+00:00
+[2025-04-26T22:11:26.602+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=110) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-26T22:11:26.604+0000] {standard_task_runner.py:72} INFO - Started process 112 to run task
+[2025-04-26T22:11:26.605+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_csv_pipeline', 'extract_csv', 'manual__2025-04-26T22:11:19.943711+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpinh6ukno']
+[2025-04-26T22:11:26.607+0000] {standard_task_runner.py:105} INFO - Job 72: Subtask extract_csv
+[2025-04-26T22:11:26.675+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_csv_pipeline.extract_csv manual__2025-04-26T22:11:19.943711+00:00 [running]> on host 2bdbe8f4b441
+[2025-04-26T22:11:27.144+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_csv_pipeline' AIRFLOW_CTX_TASK_ID='extract_csv' AIRFLOW_CTX_EXECUTION_DATE='2025-04-26T22:11:19.943711+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-26T22:11:19.943711+00:00'
+[2025-04-26T22:11:27.146+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-26T22:11:27.147+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-26T22:11:27.147+0000] {logging_mixin.py:190} INFO - Current task name:extract_csv state:running start_date:2025-04-26 22:11:26.555816+00:00
+[2025-04-26T22:11:27.148+0000] {logging_mixin.py:190} INFO - Dag name:etl_csv_pipeline and current dag run status:running
+[2025-04-26T22:11:27.148+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-26T22:11:27.243+0000] {extract.py:15} INFO - ✅ Archivo cargado desde data/Superstore01.csv, contiene 9994 filas y 20 columnas.
+[2025-04-26T22:11:27.244+0000] {python.py:240} INFO - Done. Returned value was:       Row ID        Order ID  Order Date  ... Discount    Profit Rating
+0          1  CA-2013-152156  09-11-2013  ...     0.00    $41.91    3.5
+1          2  CA-2013-152156  09-11-2013  ...     0.00   $219.58    4.4
+2          3  CA-2013-138688  13-06-2013  ...     0.00     $6.87    4.3
+3          4  US-2012-108966  11-10-2012  ...     0.45  $-383.03    4.4
+4          5  US-2012-108966  11-10-2012  ...     0.20     $2.52    4.2
+...      ...             ...         ...  ...      ...       ...    ...
+9989    9990  CA-2011-110422  22-01-2011  ...     0.20     $4.10    4.6
+9990    9991  CA-2014-121258  27-02-2014  ...     0.00    $15.63    4.1
+9991    9992  CA-2014-121258  27-02-2014  ...     0.20    $19.39    4.3
+9992    9993  CA-2014-121258  27-02-2014  ...     0.00    $13.32    4.0
+9993    9994  CA-2014-119914  05-05-2014  ...     0.00    $72.95    4.2
+
+[9994 rows x 20 columns]
+[2025-04-26T22:11:27.514+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-26T22:11:27.515+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_csv_pipeline, task_id=extract_csv, run_id=manual__2025-04-26T22:11:19.943711+00:00, execution_date=20250426T221119, start_date=20250426T221126, end_date=20250426T221127
+[2025-04-26T22:11:27.550+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-26T22:11:27.551+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-26T22:11:27.552+0000] {logging_mixin.py:190} INFO - Dag name:etl_csv_pipeline queued_at:2025-04-26 22:11:20.018482+00:00
+[2025-04-26T22:11:27.552+0000] {logging_mixin.py:190} INFO - Task hostname:2bdbe8f4b441 operator:PythonOperator
+[2025-04-26T22:11:27.586+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-26T22:11:27.634+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-26T22:11:27.637+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
