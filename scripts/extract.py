@@ -1,28 +1,25 @@
 # scripts/extract.py
-
 import pandas as pd
 import os
 import logging
 
-# Configura el logger de Airflow
 logger = logging.getLogger(__name__)
 
-def extract_csv(file_name: str = 'Superstore01.csv', data_dir: str = 'data') -> pd.DataFrame:
+def extract_csv(file_name: str = 'Superstore01.csv', data_dir: str = 'data', tmp_dir: str = '/tmp') -> str:
+    """
+    Extrae datos de un CSV y guarda una copia en /tmp para procesamiento posterior.
+    Retorna la ruta del archivo extraído.
+    """
     file_path = os.path.join(data_dir, file_name)
+    tmp_path = os.path.join(tmp_dir, 'superstore_raw.csv')
 
     try:
         df = pd.read_csv(file_path)
-        logger.info(f"✅ Archivo cargado desde {file_path}, contiene {df.shape[0]} filas y {df.shape[1]} columnas.")
-        return df
-
-    except FileNotFoundError:
-        logger.error(f"❌ Error: El archivo '{file_path}' no existe. Verifica el nombre o la ruta.")
-        raise
-
-    except pd.errors.ParserError:
-        logger.error(f"❌ Error al parsear el archivo '{file_path}'. Verifica el formato del CSV.")
-        raise
+        os.makedirs(tmp_dir, exist_ok=True)
+        df.to_csv(tmp_path, index=False)
+        logger.info(f"✅ Datos extraídos y guardados temporalmente en {tmp_path}.")
+        return tmp_path
 
     except Exception as e:
-        logger.error(f"❌ Error inesperado al cargar el archivo '{file_path}': {e}")
+        logger.error(f"❌ Error extrayendo CSV: {e}")
         raise
