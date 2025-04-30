@@ -13,6 +13,10 @@ def extract_csv(file_name: str = 'Superstore01.csv', data_dir: str = 'data', tmp
     file_path = os.path.join(data_dir, file_name)
     tmp_path = os.path.join(tmp_dir, 'superstore_raw.csv')
 
+    # Validar si el archivo de entrada existe
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"❌ El archivo de entrada no existe en: {file_path}")
+
     try:
         df = pd.read_csv(file_path)
         os.makedirs(tmp_dir, exist_ok=True)

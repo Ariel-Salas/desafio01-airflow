@@ -20,7 +20,13 @@ def load_data(**kwargs):
     os.makedirs(output_dir, exist_ok=True)
 
     final_output_path = os.path.join(output_dir, output_file)
+
+    # 👉 Advertir si se sobrescribe archivo
+    if os.path.exists(final_output_path):
+        logger.warning(f"⚠️ El archivo de salida ya existía y fue sobrescrito: {final_output_path}")
+
     shutil.copy(clean_file_path, final_output_path)
 
     logger.info(f"✅ Archivo final guardado en {final_output_path}")
+
 
