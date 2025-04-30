@@ -3,6 +3,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 import sys
+import os
 sys.path.append('/opt/airflow/scripts')
 
 from extract import extract_csv

@@ -1,19 +1,21 @@
 # scripts/clean_data.py
-import pandas as pd
+# scripts/clean_data.py
+import sys
 import os
-import logging
+sys.path.append(os.path.join(os.path.dirname(__file__)))  # Asegura acceso a utils
+
 from utils.parsers import parse_to_float
+
+import pandas as pd
+import logging
 
 logger = logging.getLogger(__name__)
 
 def clean_column(df, column_name):
-    """
-    Aplica la limpieza a una columna específica del DataFrame.
-    """
     if column_name not in df.columns:
         raise ValueError(f"❌ La columna '{column_name}' no existe en el DataFrame")
 
-    def safe_parse(value):  # 👉 Permite loggear valores erróneos individualmente
+    def safe_parse(value):
         try:
             return parse_to_float(value)
         except Exception as e:
@@ -28,9 +30,6 @@ def clean_column(df, column_name):
     return df
 
 def clean_data(column_name='Sales', output_path='/tmp/cleaned.csv', **kwargs):
-    """
-    Función principal llamada por Airflow. Limpia una columna y guarda el CSV.
-    """
     ti = kwargs['ti']
     extracted_file_path = ti.xcom_pull(task_ids='extract_csv')
 
@@ -43,12 +42,8 @@ def clean_data(column_name='Sales', output_path='/tmp/cleaned.csv', **kwargs):
     logger.info(f"🧼 Limpiando columna: {column_name}")
     df = clean_column(df, column_name)
 
-    # 👉 Informar cuántas filas fueron procesadas
     logger.info(f"📊 {len(df)} filas procesadas en la limpieza")
-
     df.to_csv(output_path, index=False)
     logger.info(f"✅ Datos limpios guardados en {output_path}")
 
     return output_path
-
-
