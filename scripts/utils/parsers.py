@@ -20,7 +20,7 @@ def parse_to_float(value):
         try:
             return float(value_cleaned)
         except ValueError:
-            # 👉 Agregado para mayor trazabilidad del valor fallido
+            #Para mayor trazabilidad del errror
             print(f"❌ Error al convertir '{value}' a float.")
             raise ValueError(f"❌ No se pudo convertir a float: '{value}'")
 

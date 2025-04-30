@@ -1,4 +1,4 @@
-# scripts/clean_data.py
+
 # scripts/clean_data.py
 import sys
 import os
@@ -29,6 +29,10 @@ def clean_column(df, column_name):
         raise
     return df
 
+
+
+
+#Limpieza de columna Sales
 def clean_data(column_name='Sales', output_path='/tmp/cleaned.csv', **kwargs):
     ti = kwargs['ti']
     extracted_file_path = ti.xcom_pull(task_ids='extract_csv')
