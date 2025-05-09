@@ -15,7 +15,7 @@ def extract_csv(file_name: str = 'Superstore01.csv', data_dir: str = 'data', tmp
 
     # Validar si el archivo de entrada existe
     if not os.path.exists(file_path):
-        raise FileNotFoundError(f"❌ El archivo de entrada no existe enn: {file_path}")
+        raise FileNotFoundError(f"❌ El archivo de entrada no existe en: {file_path}")
 
     try:
         df = pd.read_csv(file_path)
