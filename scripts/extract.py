@@ -21,7 +21,7 @@ def extract_csv(file_name: str = 'Superstore01.csv', data_dir: str = 'data', tmp
         df = pd.read_csv(file_path)
         os.makedirs(tmp_dir, exist_ok=True)
         df.to_csv(tmp_path, index=False)
-        logger.info(f"✅ Datos extraídos y guardados temporalmente en {tmp_path}.")
+        logger.info(f"✅ Datos extraídos y guardados temporalmentes en {tmp_path}.")
         return tmp_path
 
     except Exception as e:
