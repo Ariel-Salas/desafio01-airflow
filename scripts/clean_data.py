@@ -5,6 +5,8 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__)))  # Asegura acceso a utils
 
 from utils.parsers import parse_to_float
+from utils.cleaning_helpers import drop_duplicate_columns
+
 
 import pandas as pd
 import logging
