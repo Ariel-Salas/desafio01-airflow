@@ -1,0 +1,29 @@
+[2025-05-12T21:09:56.949+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-12T21:09:57.025+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_csv_pipeline_v2.load_data manual__2025-05-12T21:09:42.475464+00:00 [queued]>
+[2025-05-12T21:09:57.066+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_csv_pipeline_v2.load_data manual__2025-05-12T21:09:42.475464+00:00 [queued]>
+[2025-05-12T21:09:57.067+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-05-12T21:09:57.111+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_data> on 2025-05-12 21:09:42.475464+00:00
+[2025-05-12T21:09:57.130+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=394) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-12T21:09:57.134+0000] {standard_task_runner.py:72} INFO - Started process 396 to run task
+[2025-05-12T21:09:57.145+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_csv_pipeline_v2', 'load_data', 'manual__2025-05-12T21:09:42.475464+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp8w8u83m5']
+[2025-05-12T21:09:57.147+0000] {standard_task_runner.py:105} INFO - Job 129: Subtask load_data
+[2025-05-12T21:09:57.318+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_csv_pipeline_v2.load_data manual__2025-05-12T21:09:42.475464+00:00 [running]> on host 88025fb06de6
+[2025-05-12T21:09:57.596+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_csv_pipeline_v2' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2025-05-12T21:09:42.475464+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-12T21:09:42.475464+00:00'
+[2025-05-12T21:09:57.616+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-05-12T21:09:57.619+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-05-12T21:09:57.623+0000] {logging_mixin.py:190} INFO - Current task name:load_data state:running start_date:2025-05-12 21:09:57.027147+00:00
+[2025-05-12T21:09:57.624+0000] {logging_mixin.py:190} INFO - Dag name:etl_csv_pipeline_v2 and current dag run status:running
+[2025-05-12T21:09:57.628+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-05-12T21:09:57.717+0000] {load.py:30} INFO - ✅ Archivo final guardado en data/output/superstore_clean.csv
+[2025-05-12T21:09:57.719+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-12T21:09:57.751+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-05-12T21:09:57.753+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_csv_pipeline_v2, task_id=load_data, run_id=manual__2025-05-12T21:09:42.475464+00:00, execution_date=20250512T210942, start_date=20250512T210957, end_date=20250512T210957
+[2025-05-12T21:09:57.837+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-05-12T21:09:57.839+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-05-12T21:09:57.840+0000] {logging_mixin.py:190} INFO - Dag name:etl_csv_pipeline_v2 queued_at:2025-05-12 21:09:42.497883+00:00
+[2025-05-12T21:09:57.841+0000] {logging_mixin.py:190} INFO - Task hostname:88025fb06de6 operator:PythonOperator
+[2025-05-12T21:09:57.883+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-05-12T21:09:57.919+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-12T21:09:57.933+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
