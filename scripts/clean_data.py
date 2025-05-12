@@ -11,6 +11,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+# Función que limpia una columna específica del DataFrame
 def clean_column(df, column_name):
     if column_name not in df.columns:
         raise ValueError(f"❌ La columna '{column_name}' no existe en el DataFrame")
@@ -31,8 +32,7 @@ def clean_column(df, column_name):
 
 
 
-
-#Limpieza de columna Sales
+# Función principal que maneja la limpieza del DataFrame y guarda el archivo limpio
 def clean_data(column_name='Sales', output_path='/tmp/cleaned.csv', **kwargs):
     ti = kwargs['ti']
     extracted_file_path = ti.xcom_pull(task_ids='extract_csv')
