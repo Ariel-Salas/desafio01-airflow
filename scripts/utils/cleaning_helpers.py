@@ -26,5 +26,5 @@ def drop_columns(df, columns):
         logger.info(f"🗑️ Eliminando columnas: {existing}")
         df = df.drop(columns=existing)
     else:
-        logger.info("✅ Ninguna de las columnas a eliminar estaba presente.")
+        logger.info("✅ Ninguna de las columnas a eliminar estaba presentee.")
     return df
