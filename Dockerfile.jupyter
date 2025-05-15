@@ -1,0 +1,17 @@
+FROM jupyter/base-notebook:python-3.11
+
+USER root
+
+# Copia los requirements
+COPY requirements.txt /tmp/requirements.txt
+
+# Instala dependencias
+RUN pip install --no-cache-dir -r /tmp/requirements.txt && \
+    python -m ipykernel install --user --name eda-kernel --display-name "EDA Kernel" && \
+    fix-permissions /home/jovyan
+
+USER jovyan
+
+# Variables de entorno
+ENV JUPYTER_ENABLE_LAB=yes \
+    PYTHONPATH=/home/jovyan/work

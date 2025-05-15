@@ -298,5 +298,24 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
+
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile.jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+      - ./data:/home/jovyan/data
+      - ./requirements.txt:/tmp/requirements.txt  # Para desarrollo
+    environment:
+      JUPYTER_TOKEN: ""  # Acceso sin token
+    restart: unless-stopped
+
+
+  
+
 volumes:
   postgres-db-volume:
