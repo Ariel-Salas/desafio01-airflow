@@ -1,79 +1,53 @@
 
-
-Proyecto creado con docker
-
-
-
-
-
-
-
-
-
-
-
-Para correr los test se deben ejecutar en bash el sgte comando: 
-
-docker-compose exec airflow-scheduler bash
-pytest tests/
-
-
-Para cambair el motor de kernel para el EDA.ipynb:
-1) Tener la extensión instalada de Dev Containers
-1) Presionar f1 en VSC
-2) Copiar y pegar: Remote-Containers: Attach to Running Container
-3) Elegir el KERNEL ya creado: EDA Kernel
-
-
-<!-- export PYTHONPATH=/opt/airflow -->
-
-
-
 # 🌀 Proyecto de Orquestación de Workflows con Apache Airflow y Análisis Exploratorio de Datos
 
-Este proyecto utiliza **Apache Airflow** como motor de orquestación de workflows dentro de un entorno **Dockerizado**, facilitando la automatización de pipelines de datos. Además, incluye un entorno de desarrollo con Jupyter Notebook para realizar análisis exploratorio de datos (**EDA**) utilizando librerías de Python.
+Este proyecto implementa un pipeline de datos automatizado usando **Apache Airflow** dentro de un entorno **Dockerizado**. Además, integra un análisis exploratorio de datos (EDA) en **Jupyter Notebook**, utilizando librerías como `pandas`, `seaborn`, entre otras.
+
+Es ideal para demostrar habilidades en orquestación de workflows, procesamiento de datos y análisis exploratorio con Python.
 
 ---
 
 ## 📦 Tecnologías y Versiones
 
-| Herramienta     | Versión         | Notas                                               |
-|------------------|------------------|------------------------------------------------------|
-| Docker           | 28.0.1           | Se requiere Docker instalado                        |
-| Docker Compose   | v2.33.1-desktop.1|                                                     |
-| Apache Airflow   | `2.10.5`         | Desde imagen: `apache/airflow:2.10.5`               |
-| Python (host)    | `3.13.2`         | Versión de Python en tu máquina local               |
-| Python (contenedor) | ~3.10 (estimado) | Incluido en la imagen de Airflow                   |
-| Jupyter Notebook | (via kernel)     | Usado para análisis exploratorio (EDA)              |
+| Herramienta         | Versión               | Notas                                               |
+|---------------------|------------------------|------------------------------------------------------|
+| Docker              | 28.0.1                 | Requiere instalación previa en el sistema host       |
+| Docker Compose      | v2.33.1-desktop.1      |                                                     |
+| Apache Airflow      | 2.10.5                 | Imagen base: `apache/airflow:2.10.5`                 |
+| Python (host)       | 3.13.2                 | Versión de Python en la máquina local                |
+| Python (contenedor) | 3.12.9                 | Versión utilizada dentro del contenedor de Airflow   |
+| Jupyter Notebook    | vía Dev Containers     | Utilizado para el análisis exploratorio              |
 
-### Principales librerías utilizadas en el entorno EDA:
+### 📚 Librerías principales para EDA
 
 - `pandas==2.2.3`
 - `numpy==2.2.3`
 - `matplotlib==3.10.1`
 - `seaborn==0.13.2`
-- `scikit-learn==1.6.1`
 - `plotly==6.0.0`
+- `scikit-learn==1.6.1`
 
 ---
 
 ## 📁 Estructura del Proyecto
 
+
 desafio01-airflow/
 │
 ├── dags/                          # DAGs de Airflow
-│   └── ejemplo_dag.py             # DAG de ejemplo definido con Python
+│   └── ejemplo_dag.py             # DAG de ejemplo
 │
 ├── tests/                         # Pruebas con Pytest
-│   └── test_dag_validacion.py     # Validación de estructura de DAG
+│   └── test_dag_validacion.py     # Validación de DAGs
 │
-├── notebooks/                     # Notebooks para EDA
-│   └── EDA.ipynb                  # Análisis exploratorio de datos
+├── notebooks/                     # Notebooks para análisis EDA
+│   └── EDA.ipynb
 │
 ├── docker-compose.yml             # Orquestación de servicios con Docker
 ├── .env                           # Variables de entorno (si aplica)
-├── requirements.txt               # Requisitos opcionales para entorno local (EDA)
-└── README.md                      # Documentación del proyect
+├── requirements.txt               # Librerías del entorno local (opcional)
+└── README.md                      # Documentación del proyecto
+
 
 
 
@@ -91,6 +65,41 @@ desafio01-airflow/
 
 
 
-🧑‍💻 Autor
-Nombre: Ariel Salas Díaz
-Email: [arielsd12@gmail.com]
+3. Verificar que Airflow está corriendo
+
+    Accede a la interfaz web de Airflow:
+    http://localhost:8080
+    usuario y contraseña por defecto: admin / admin
+
+
+
+🧪 Ejecutar Pruebas
+    Para ejecutar los tests desde dentro del contenedor airflow-scheduler:
+
+    docker-compose exec airflow-scheduler bash
+    pytest tests/
+
+
+
+🧠  Cambiar el kernel del notebook EDA.ipynb
+   
+   1. Instalar la extensión Dev Containers en Visual Studio Code
+
+   2. Presionar F1 → seleccionar Remote-Containers: Attach to Running Container
+
+   3. Elegir el contenedor con el kernel para notebooks (EDA Kernel)
+
+
+ 📄 Documentación Adicional
+
+    Este proyecto se acompaña de un documento que explica cómo se resolvió el desafío, con capturas y explicación técnica.
+
+    📎 Instrucciones detalladas en este documento (Word/PDF)
+
+🧑‍💻Autor
+    Nombre: Ariel Salas Díaz
+    Email: [arielsd12@gmail.com]
+    
+
+    Estado del proyecto
+✅ Finalizado – listo para revisión y despliegue.
