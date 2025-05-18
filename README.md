@@ -19,8 +19,10 @@ pytest tests/
 
 
 para cambair el motor de kernel para el EDA.ipynb:
+1) Tener la extensión instalada de Dev Containers
 1) Presionar f1 en VSC
-2) Remote-Containers: Attach to Running Container...
+2) copiar y pegar: Remote-Containers: Attach to Running Container
+3) Elegir el KERNEL ya creado: EDA Kernel
 
 
 <!-- export PYTHONPATH=/opt/airflow -->
