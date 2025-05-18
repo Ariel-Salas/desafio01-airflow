@@ -39,8 +39,8 @@ Este proyecto utiliza **Apache Airflow** como motor de orquestación de workflow
 
 | Herramienta     | Versión         | Notas                                               |
 |------------------|------------------|------------------------------------------------------|
-| Docker           | latest           | Se requiere Docker instalado                        |
-| Docker Compose   | latest           |                                                     |
+| Docker           | 28.0.1           | Se requiere Docker instalado                        |
+| Docker Compose   | v2.33.1-desktop.1|                                                     |
 | Apache Airflow   | `2.10.5`         | Desde imagen: `apache/airflow:2.10.5`               |
 | Python (host)    | `3.13.2`         | Versión de Python en tu máquina local               |
 | Python (contenedor) | ~3.10 (estimado) | Incluido en la imagen de Airflow                   |
@@ -58,7 +58,6 @@ Este proyecto utiliza **Apache Airflow** como motor de orquestación de workflow
 ---
 
 ## 📁 Estructura del Proyecto
-
 
 desafio01-airflow/
 │
