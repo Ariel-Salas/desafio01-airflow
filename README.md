@@ -69,7 +69,8 @@ desafio01-airflow/
 
     Accede a la interfaz web de Airflow:
     http://localhost:8080
-    usuario y contraseña por defecto: admin / admin
+    Usuario: admin
+    Contraseña: admin
 
 
 
@@ -99,7 +100,7 @@ desafio01-airflow/
 🧑‍💻Autor
     Nombre: Ariel Salas Díaz
     Email: [arielsd12@gmail.com]
-    
+
 
     Estado del proyecto
 ✅ Finalizado – listo para revisión y despliegue.
