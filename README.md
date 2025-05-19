@@ -55,7 +55,7 @@ desafio01-airflow/
 
 1. Clonar el repositorio
 
-    git clone https://github.com/tu-usuario/desafio01-airflow.git
+    git clone https://github.com/Ariel-Salas/desafio01-airflow.git
     cd desafio01-airflow
 
 2. Levantar los contenedores
