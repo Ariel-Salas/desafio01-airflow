@@ -7,8 +7,10 @@ logger = logging.getLogger(__name__)
 def parse_date_columns(df, date_columns, date_format='%d-%m-%Y'):
     """
     Convierte columnas de fecha de string a datetime.
-    Columnas debes estar libre de NaN
-    Libre de caracteres no permitidos
+    
+    Verifica que:
+    - No existan valores nulos (NaN)
+    - Todos los valores sean convertibles al formato de fecha especificado
 
     Parámetros:
     - df: pandas.DataFrame
@@ -16,16 +18,31 @@ def parse_date_columns(df, date_columns, date_format='%d-%m-%Y'):
     - date_format: formato de entrada de la fecha (por defecto: '%d-%m-%Y')
 
     Retorna:
-    - DataFrame con las columnas de fecha convertidas a tipo datetime
+    - DataFrame con columnas convertidas a datetime
     """
     for col in date_columns:
-        if col in df.columns:
-            try:
-                df[col] = pd.to_datetime(df[col], format=date_format)
-                logger.info(f"📅 Columna '{col}' convertida exitosamente a datetime.")
-            except Exception as e:
-                logger.error(f"❌ Error al convertir la columna '{col}' a datetime: {e}")
-                raise
-        else:
+        if col not in df.columns:
             logger.warning(f"⚠️ La columna '{col}' no existe en el DataFrame.")
+            continue
+
+        # Validación: valores nulos
+        if df[col].isnull().any():
+            null_count = df[col].isnull().sum()
+            error_msg = f"❌ La columna '{col}' contiene {null_count} valores nulos. No se puede convertir a datetime."
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+
+        # Validación: prueba de conversión antes de aplicar
+        try:
+            pd.to_datetime(df[col], format=date_format, errors='raise')
+        except Exception as e:
+            error_msg = f"❌ Error al convertir la columna '{col}' al formato '{date_format}': {e}"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+
+        # Conversión real
+        df[col] = pd.to_datetime(df[col], format=date_format)
+        logger.info(f"📅 Columna '{col}' convertida exitosamente a datetime.")
+
     return df
+

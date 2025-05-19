@@ -5,6 +5,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__)))  # Asegura acceso a uti
 
 from utils.parsers import parse_to_float
 from utils.cleaning_helpers import drop_columns
+from utils.parsers import parse_to_float, parse_date_columns
+
 
 import pandas as pd
 import logging
@@ -44,6 +46,15 @@ def clean_data(output_path='/tmp/cleaned.csv', **kwargs):
             df = clean_column(df, col)
         else:
             logger.warning(f"⚠️ La columna '{col}' no se encontró en los datos originales")
+
+
+    # ✅ Limpiar columnas de fechas
+    date_columns = ['Order Date', 'Ship Date']
+    date_columns_present = [col for col in date_columns if col in df.columns]
+    if date_columns_present:
+        logger.info(f"📅 Convirtiendo columnas de fecha: {date_columns_present}")
+        df = parse_date_columns(df, date_columns_present, date_format='%d-%m-%Y')
+
 
     # ✅ Eliminamos columnas innecesarias
     df = drop_columns(df, ['Transaction'])
