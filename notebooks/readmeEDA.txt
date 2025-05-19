@@ -1,9 +1,11 @@
-#Insight numero 1:
+## Nota número 2: Profit con pérdida
 
-Al analizar los datos, se observa que aproximadamente el 18.7% de las transacciones presentan un Profit negativo, lo cual es significativo considerando que el dataset contiene 10000 filas.
+**Insight:**  
+Aproximadamente el **18.7% de las transacciones registran un Profit negativo**, lo cual representa una proporción considerable dado que el dataset contiene 10,000 registros.  
+Una revisión más profunda muestra que **varias de estas pérdidas están asociadas a descuentos excesivos**, llegando hasta el **80% del valor del producto**, lo cual en ocasiones **supera el precio de venta**, generando pérdidas netas.
 
-Una de las causas evidentes está relacionada con descuentos excesivos, que en muchos casos alcanzan el 80%, superando el valor de venta. Esto provoca una pérdida neta para la empresa en esas ventas.
+**Recomendación:**  
+Aplicar descuentos tan altos no es sostenible a largo plazo. Se recomienda revisar la **estrategia de precios y promociones**, especialmente en productos donde el margen de ganancia es bajo.
 
-Conclusión: esta estrategia de aplicar descuentos tan altos no es sostenible en el tiempo y sugiere una revisión urgente de la política de precios y promociones.
-
-Esto se jsutificará con una matriz de pearson en el siguiente capítulo
+**Nota:**  
+En el siguiente capítulo se justifica este análisis mediante una **matriz de correlación de Pearson**, que refuerza la relación entre los descuentos y la pérdida de profit.
