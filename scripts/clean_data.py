@@ -6,6 +6,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__)))  # Asegura acceso a uti
 from utils.parsers import parse_to_float
 from utils.cleaning_helpers import drop_columns
 from utils.parse_date_columns import parse_date_columns
+from utils.parsers_without_negative import parse_without_negative
 
 
 import pandas as pd
@@ -38,6 +39,19 @@ def clean_data(output_path='/tmp/cleaned.csv', **kwargs):
 
     logger.info(f"📥 Leyendo archivo CSV: {extracted_file_path}")
     df = pd.read_csv(extracted_file_path)
+
+    # ✅ Limpiar columna 'Discount' si existe
+    if 'Discount' in df.columns:
+        logger.info("🧼 Limpiando columna: Discount")
+        try:
+            df['Discount'] = df['Discount'].apply(parse_without_negative)
+        except Exception as e:
+            logger.error(f"❌ Error al limpiar columna 'Discount': {e}")
+            raise
+    else:
+        logger.warning("⚠️ La columna 'Discount' no se encontró en los datos originales")
+
+
 
     # ✅ Limpiar las columnas 'Sales' y 'Profit' si existen
     for col in ['Sales', 'Profit']:
