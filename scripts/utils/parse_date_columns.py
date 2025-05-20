@@ -1,4 +1,4 @@
-# utils/parsers.py o utils/date_utils.py
+# utils/parse_date_columns.py 
 import pandas as pd
 import logging
 
@@ -11,6 +11,7 @@ def parse_date_columns(df, date_columns, date_format='%d-%m-%Y'):
     Verifica que:
     - No existan valores nulos (NaN)
     - Todos los valores sean convertibles al formato de fecha especificado
+    - Creado para columnas de fechas
 
     Parámetros:
     - df: pandas.DataFrame

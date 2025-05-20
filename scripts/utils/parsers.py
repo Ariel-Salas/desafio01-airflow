@@ -5,9 +5,10 @@ _non_numeric_re = re.compile(r'[^\d.,-]+')
 
 def parse_to_float(value):
     """
-    Convierte un valor numérico representado como string a float.
-    La columna debe estar limpia de nulos, si no: 
-    Lanza excepciones si el valor es nulo o de tipo no esperado.
+    -Convierte un valor numérico representado como string a float.
+    -La columna debe estar limpia de nulos, si no: 
+    -Lanza excepciones si el valor es nulo o de tipo no esperado.
+    -Creado para valores float
     """
     if value is None:
         raise ValueError("❌ Valor nulo encontrado")
