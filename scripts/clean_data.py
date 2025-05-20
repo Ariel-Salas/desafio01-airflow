@@ -5,7 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__)))  # Asegura acceso a uti
 
 from utils.parsers import parse_to_float
 from utils.cleaning_helpers import drop_columns
-from utils.parsers import parse_to_float, parse_date_columns
+from utils.parse_date_columns import parse_date_columns
 
 
 import pandas as pd
