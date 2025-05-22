@@ -88,6 +88,8 @@ desafio01-airflow/
 
    2. Presionar F1 → seleccionar Remote-Containers: Attach to Running Container
 
+   3. Seleccionar Jupiter
+
    3. Elegir el contenedor con el kernel para notebooks (EDA Kernel)
 
 
@@ -95,7 +97,7 @@ desafio01-airflow/
 
     Este proyecto se acompaña de un documento que explica cómo se resolvió el desafío, con capturas y explicación técnica.
 
-    📎 Instrucciones detalladas en este documento (Word/PDF)
+    📎 Instrucciones detalladas en este link documento (Word/PDF)
 
 🧑‍💻Autor
     Nombre: Ariel Salas Díaz

@@ -1,0 +1,71 @@
+[2025-05-21T01:26:12.054+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T01:26:12.087+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_csv_pipeline_v2.clean_data manual__2025-05-21T01:25:55.324465+00:00 [queued]>
+[2025-05-21T01:26:12.107+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_csv_pipeline_v2.clean_data manual__2025-05-21T01:25:55.324465+00:00 [queued]>
+[2025-05-21T01:26:12.109+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-05-21T01:26:12.135+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): clean_data> on 2025-05-21 01:25:55.324465+00:00
+[2025-05-21T01:26:12.147+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=346) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-21T01:26:12.150+0000] {standard_task_runner.py:72} INFO - Started process 348 to run task
+[2025-05-21T01:26:12.151+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_csv_pipeline_v2', 'clean_data', 'manual__2025-05-21T01:25:55.324465+00:00', '--job-id', '202', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpl9dg0zic']
+[2025-05-21T01:26:12.153+0000] {standard_task_runner.py:105} INFO - Job 202: Subtask clean_data
+[2025-05-21T01:26:12.242+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_csv_pipeline_v2.clean_data manual__2025-05-21T01:25:55.324465+00:00 [running]> on host 2b880fd13c2c
+[2025-05-21T01:26:12.431+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_csv_pipeline_v2' AIRFLOW_CTX_TASK_ID='clean_data' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T01:25:55.324465+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T01:25:55.324465+00:00'
+[2025-05-21T01:26:12.436+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-05-21T01:26:12.437+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-05-21T01:26:12.438+0000] {logging_mixin.py:190} INFO - Current task name:clean_data state:running start_date:2025-05-21 01:26:12.088326+00:00
+[2025-05-21T01:26:12.439+0000] {logging_mixin.py:190} INFO - Dag name:etl_csv_pipeline_v2 and current dag run status:running
+[2025-05-21T01:26:12.439+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-05-21T01:26:12.458+0000] {clean_data.py:41} INFO - 📥 Leyendo archivo CSV: /tmp/superstore_raw.csv
+[2025-05-21T01:26:12.535+0000] {clean_data.py:46} INFO - 🧼 Limpiando columna: Discount
+[2025-05-21T01:26:12.540+0000] {parsers_without_negative.py:45} WARNING - ⚠️ Valor negativo detectado: -0.2 -> convertido a positivo
+[2025-05-21T01:26:12.542+0000] {parsers_without_negative.py:45} WARNING - ⚠️ Valor negativo detectado: -0.2 -> convertido a positivo
+[2025-05-21T01:26:12.546+0000] {parsers_without_negative.py:45} WARNING - ⚠️ Valor negativo detectado: -0.2 -> convertido a positivo
+[2025-05-21T01:26:12.552+0000] {clean_data.py:59} INFO - 🧼 Limpiando columna: Quantity
+[2025-05-21T01:26:12.554+0000] {parsers_quantity.py:40} WARNING - ⚠️ Valor negativo detectado: -6.0 -> convertido a positivo
+[2025-05-21T01:26:12.556+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 3.5 -> truncado a entero
+[2025-05-21T01:26:12.558+0000] {parsers_quantity.py:40} WARNING - ⚠️ Valor negativo detectado: -8.0 -> convertido a positivo
+[2025-05-21T01:26:12.559+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.560+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 6.5 -> truncado a entero
+[2025-05-21T01:26:12.560+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 4.5 -> truncado a entero
+[2025-05-21T01:26:12.561+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.562+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 2.5 -> truncado a entero
+[2025-05-21T01:26:12.563+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 2.5 -> truncado a entero
+[2025-05-21T01:26:12.564+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 5.5 -> truncado a entero
+[2025-05-21T01:26:12.567+0000] {parsers_quantity.py:40} WARNING - ⚠️ Valor negativo detectado: -3.0 -> convertido a positivo
+[2025-05-21T01:26:12.568+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 2.5 -> truncado a entero
+[2025-05-21T01:26:12.569+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.570+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.571+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 3.5 -> truncado a entero
+[2025-05-21T01:26:12.572+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.573+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.574+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 6.5 -> truncado a entero
+[2025-05-21T01:26:12.574+0000] {parsers_quantity.py:40} WARNING - ⚠️ Valor negativo detectado: -5.0 -> convertido a positivo
+[2025-05-21T01:26:12.575+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 2.5 -> truncado a entero
+[2025-05-21T01:26:12.576+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 9.5 -> truncado a entero
+[2025-05-21T01:26:12.577+0000] {parsers_quantity.py:40} WARNING - ⚠️ Valor negativo detectado: -3.0 -> convertido a positivo
+[2025-05-21T01:26:12.577+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 3.5 -> truncado a entero
+[2025-05-21T01:26:12.579+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.580+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 1.5 -> truncado a entero
+[2025-05-21T01:26:12.581+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 5.5 -> truncado a entero
+[2025-05-21T01:26:12.583+0000] {parsers_quantity.py:43} WARNING - ⚠️ Valor decimal detectado: 3.5 -> truncado a entero
+[2025-05-21T01:26:12.585+0000] {parsers_quantity.py:40} WARNING - ⚠️ Valor negativo detectado: -2.0 -> convertido a positivo
+[2025-05-21T01:26:12.587+0000] {parsers_quantity.py:40} WARNING - ⚠️ Valor negativo detectado: -6.0 -> convertido a positivo
+[2025-05-21T01:26:12.593+0000] {clean_data.py:74} INFO - 🧼 Limpiando columna: Sales
+[2025-05-21T01:26:12.621+0000] {clean_data.py:74} INFO - 🧼 Limpiando columna: Profit
+[2025-05-21T01:26:12.651+0000] {clean_data.py:84} INFO - 📅 Convirtiendo columnas de fecha: ['Order Date', 'Ship Date']
+[2025-05-21T01:26:12.693+0000] {parse_date_columns.py:46} INFO - 📅 Columna 'Order Date' convertida exitosamente a datetime.
+[2025-05-21T01:26:12.720+0000] {parse_date_columns.py:46} INFO - 📅 Columna 'Ship Date' convertida exitosamente a datetime.
+[2025-05-21T01:26:12.721+0000] {cleaning_helpers.py:26} INFO - 🗑️ Eliminando columnas: ['Transaction']
+[2025-05-21T01:26:12.727+0000] {clean_data.py:91} INFO - 📊 9994 filas procesadas en la limpieza
+[2025-05-21T01:26:12.894+0000] {clean_data.py:93} INFO - ✅ Datos limpios guardados en /tmp/cleaned.csv
+[2025-05-21T01:26:12.896+0000] {python.py:240} INFO - Done. Returned value was: /tmp/cleaned.csv
+[2025-05-21T01:26:12.933+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-05-21T01:26:12.935+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=etl_csv_pipeline_v2, task_id=clean_data, run_id=manual__2025-05-21T01:25:55.324465+00:00, execution_date=20250521T012555, start_date=20250521T012612, end_date=20250521T012612
+[2025-05-21T01:26:12.973+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-05-21T01:26:12.974+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-05-21T01:26:12.974+0000] {logging_mixin.py:190} INFO - Dag name:etl_csv_pipeline_v2 queued_at:2025-05-21 01:25:55.406447+00:00
+[2025-05-21T01:26:12.975+0000] {logging_mixin.py:190} INFO - Task hostname:2b880fd13c2c operator:PythonOperator
+[2025-05-21T01:26:13.022+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-05-21T01:26:13.063+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T01:26:13.068+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
