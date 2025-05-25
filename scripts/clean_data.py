@@ -8,6 +8,7 @@ from utils.cleaning_helpers import drop_columns
 from utils.parse_date_columns import parse_date_columns
 from utils.parsers_without_negative import parse_without_negative
 from utils.parsers_quantity import parse_quantity
+from utils.raiting_parser import clean_rating_column
 
 
 import pandas as pd
@@ -66,6 +67,18 @@ def clean_data(output_path='/tmp/cleaned.csv', **kwargs):
         logger.warning("⚠️ La columna 'Quantity' no se encontró en los datos originales")
 
 
+
+
+    # ✅ Limpiar columna 'Rating' si existe
+    if 'Rating' in df.columns:
+        logger.info("🧼 Limpiando columna: Rating")
+        try:
+            df = clean_rating_column(df, column_name='Rating')
+        except Exception as e:
+            logger.error(f"❌ Error al limpiar columna 'Rating': {e}")
+            raise
+    else:
+        logger.warning("⚠️ La columna 'Rating' no se encontró en los datos originales")
 
 
     # ✅ Limpiar las columnas 'Sales' y 'Profit' si existen
