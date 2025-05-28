@@ -60,6 +60,7 @@ desafio01-airflow/
 
 2. Levantar los contenedores
     
+    docker-compose build
     docker-compose up -d
 
 
