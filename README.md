@@ -9,10 +9,10 @@ Es ideal para demostrar habilidades en orquestación de workflows, procesamiento
 
 ## 📦 Tecnologías y Versiones
 
-| Herramienta         | Versión               | Notas                                               |
+| Herramienta         | Versión                | Notas                                                |
 |---------------------|------------------------|------------------------------------------------------|
 | Docker              | 28.0.1                 | Requiere instalación previa en el sistema host       |
-| Docker Compose      | v2.33.1-desktop.1      |                                                     |
+| Docker Compose      | v2.33.1-desktop.1      |                                                      |
 | Apache Airflow      | 2.10.5                 | Imagen base: `apache/airflow:2.10.5`                 |
 | Python (host)       | 3.13.2                 | Versión de Python en la máquina local                |
 | Python (contenedor) | 3.12.9                 | Versión utilizada dentro del contenedor de Airflow   |
@@ -63,15 +63,18 @@ desafio01-airflow/
     docker-compose build
     docker-compose up -d
 
+3. Abrir el proyecto en Visual Studio Code 
+    code .
 
 
-
-3. Verificar que Airflow está corriendo
+4. Verificar que Airflow está corriendo
 
     Accede a la interfaz web de Airflow:
     http://localhost:8080
-    Usuario: admin
-    Contraseña: admin
+
+    Credenciales:
+    Usuario: airflow
+    Contraseña: airflow
 
 
 
